@@ -1,0 +1,110 @@
+.container {
+  max-width: 100%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.row {
+  display: flex;
+  gap: 4px;
+}
+
+.left {
+  position: relative;
+  justify-content: flex-start;
+}
+
+.right {
+  justify-content: flex-end;
+  position: relative;
+}
+
+.avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: var(--cb-bubble-bot-avatar-bg-color);
+}
+
+.avatarImage {
+  width: 30px;
+  height: 30px;
+}
+
+.bubble {
+  display: flex;
+  width: auto;
+  border-radius: 24px;
+  padding: 12px 20px;
+  gap: 20px;
+  max-width: 80%;
+  flex-wrap: wrap;
+  word-break: keep-all;
+  position: relative;
+}
+
+.bubble::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  bottom: 0px;
+  top: auto;
+  border: 18px solid transparent;
+}
+
+.left .bubble {
+  border-bottom-left-radius: 0;
+  background: var(--cb-bubble-bot-bg-color);
+  color: var(--cb-bubble-bot-text-color);
+}
+
+.left .bubble::after {
+  left: -10px;
+  right: auto;
+  border-bottom-color: var(--cb-bubble-bot-bg-color);
+}
+
+.right .bubble {
+  border-bottom-right-radius: 0;
+  background: var(--cb-bubble-user-bg-color);
+  color: var(--cb-bubble-user-text-color);
+}
+
+.right .bubble::after {
+  left: auto;
+  right: -10px;
+  /* border-bottom-color: var(--cb-bubble-user-arrow-color); */
+
+  clip-path: polygon(50% 40%, 0% 94%, 99% 100%);
+  width: 20px;
+  height: 16px;
+  bottom: -1px;
+  right: -9px;
+  background: var(--cb-bubble-user-arrow-color);
+  border: 0;
+}
+
+.replies {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-top: 12px;
+}
+
+.option {
+  border: 0;
+  padding: 8px 16px;
+  outline: 0;
+  border-radius: 16px;
+  cursor: pointer;
+  background: var(--cb-bubble-user-bg-color);
+  color: white;
+  font-size: 12px;
+}
+
+.slider {
+  margin-top: 12px;
+  width: 80%;
+}

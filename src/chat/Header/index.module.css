@@ -1,0 +1,46 @@
+.header {
+  width: 100%;
+  background: var(--cb-header-bg-color);
+  color: var(--cb-header-text-color);
+  padding: 12px 20px;
+  gap: 12px;
+  max-height: 60px;
+  /* display: grid;
+   */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* grid-template-columns: 30px 1fr 30px; */
+  /* grid-template-areas: "leftIcon logo rightIcon"; */
+}
+
+.image {
+  grid-area: logo;
+  height: 42px;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  justify-self: center;
+}
+
+.leftIcon {
+  grid-area: leftIcon;
+}
+
+.rightIcon {
+  grid-area: rightIcon;
+}
+
+.iconBtn {
+  outline: 0;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  display: none;
+}
+
+@media screen and (max-width: 500px) {
+  .iconBtn {
+    display: block;
+  }
+}

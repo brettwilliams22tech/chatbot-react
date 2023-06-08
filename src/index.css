@@ -1,0 +1,26 @@
+:root {
+  --cb-gradient-color: linear-gradient(to right, #003153, #1f486c, #3e5f85);
+  /* --cb-header-bg-color: #131e30; */
+  --cb-header-bg-color: var(--cb-gradient-color);
+  --cb-header-text-color: #fff;
+
+  --cb-chat-bg-color: #fff;
+
+  --cb-fab-bg-color: #131e30;
+  --cb-fab-icon-color: #fff;
+
+  --cb-fab-bg-color: var(--cb-gradient-color);
+
+  --cb-chat-form-bg-color: #eeebf5;
+
+  /* --cb-bubble-user-bg-color: #131e30; */
+  /* --cb-bubble-user-arrow-color: var(--cb-bubble-user-bg-color); */
+
+  --cb-bubble-user-arrow-color: linear-gradient(to left, #1f486c, #3e5f85);
+  --cb-bubble-user-bg-color: var(--cb-gradient-color);
+  --cb-bubble-user-text-color: #fff;
+
+  --cb-bubble-bot-text-color: #000;
+  --cb-bubble-bot-bg-color: #f2f2f2;
+  --cb-bubble-bot-avatar-bg-color: #f5deb3;
+}

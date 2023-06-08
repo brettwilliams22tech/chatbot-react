@@ -1,0 +1,60 @@
+{
+  "name": "@pulsehq/chatbot-react",
+  "version": "1.0.0",
+  "description": "UI for showing chat bot messages",
+  "private": true,
+  "main": "./dist/index.min.js",
+  "types": "./src/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.min.js",
+      "default": "./dist/index.min.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "scripts": {
+    "build": "pnpm clean && rollup -c ./rollup.config.js --bundleConfigAsCjs",
+    "clean": "rm -rf ./dist",
+    "tsc": "tsc"
+  },
+  "peerDependencies": {
+    "react": ">=16.8.4",
+    "react-dom": ">=16.8.4"
+  },
+  "dependencies": {
+    "@pulsehq/chatbot-core": "https://github.com/brettwilliams22tech/chatbot-core.git",
+    "framer-motion": "6.2.4"
+  },
+  "resolutions": {
+    "@types/react": "17.0.0"
+  },
+  "devDependencies": {
+    "@rollup/plugin-image": "^3.0.2",
+    "@rollup/plugin-node-resolve": "^15.0.2",
+    "@rollup/plugin-terser": "^0.4.1",
+    "@rollup/plugin-typescript": "^11.1.0",
+    "@types/react": "^17.0.0",
+    "@types/react-dom": "17.0.0",
+    "@typescript-eslint/eslint-plugin": "^5.59.0",
+    "@typescript-eslint/parser": "^5.59.0",
+    "eslint": "^8.39.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.3.4",
+    "react": "^17.0.0",
+    "react-dom": "^17.0.0",
+    "rollup": "^3.20.7",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-postcss": "^4.0.2",
+    "typescript": "^5.0.4",
+    "@rollup/plugin-commonjs": "24.1.0"
+  },
+  "keywords": [
+    "react",
+    "chatbot"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}

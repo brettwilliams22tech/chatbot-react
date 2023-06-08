@@ -1,0 +1,58 @@
+.container {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  min-height: 50px;
+  background: var(--cb-chat-form-bg-color);
+}
+
+.form {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  gap: 12px;
+  margin: 0;
+}
+
+.input,
+input[type="text"] {
+  width: 100%;
+  padding: 16px 0;
+  background: var(--cb-chat-form-bg-color);
+  border: 0;
+  outline: 0;
+  box-shadow: none;
+}
+
+input[type="text"]:focus {
+  box-shadow: none;
+}
+
+.icon {
+  width: 30px;
+  color: white;
+}
+
+/* I don't want to do all these but had to becoz of theme */
+.btn,
+.btn[type="submit"],
+body[data-form-submit="regular"] .btn[type="submit"] {
+  outline: 0;
+  border: 0;
+  background: transparent !important;
+  cursor: pointer;
+  box-shadow: none;
+}
+
+.btn[type="active"] {
+  box-shadow: none;
+}
+
+.btn:hover {
+  background: transparent !important;
+}
+
+body[data-form-submit="regular"] .btn[type="submit"]:hover {
+  opacity: 1;
+  background: transparent !important;
+}
